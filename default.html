@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>hours &middot; for places around campus</title>
+	<meta name="description" content="Hours for places at and around USC.">
+	<meta name="author" content="SCDevy Studios">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="stylesheets/fontface.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/pages/default.css">
+    <link rel="stylesheet" href="stylesheets/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/icons/favicon.ico">
+	<link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
+    
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    
+	<!-- Primary Page Layout
+	================================================== -->
+
+    <div id="search-box-floater" class="container"></div>
+	<div id="search-box" class="container">
+        <div id="logo-wrapper">
+            <img id="logo" src="images/logo.svg" alt="logo">
+            <h1><span class="text-hours">hours</span></h1>
+        </div>
+        <div id="search-wrapper">
+            <form class="ui-widget">
+                <input id="search-field" type="text" maxlength="80" placeholder="When is it open?" autocomplete="off" autofocus><input id="search-button" type="button" value="Go" onclick="search(userInput.value)">
+            </form>
+        </div>
+        <script>var userInput = document.getElementById('search-field');</script>
+        <div id="results-wrapper">
+            <div id="result">
+            </div>
+        </div>
+        <div id="nav-wrapper">
+            <ul id="main-nav">
+                <li><a href="about.html">About</a></li>
+                <li>&middot;</li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        <footer id="footer-wrapper">
+            <div id="footer">&copy; 2014. Not associated with the University of Southern California.</div>
+        </footer>
+	</div>
+
+    <!-- End Document
+    ================================================== -->
+    
+    <!-- Scripts -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script>
+        $("#search-field").keypress(function(event) {
+        if (event.which == 13) {
+            event.preventDefault();
+            search(userInput.value);
+        }
+        });
+    </script>
+    <script src="js/animate.js"></script>
+    
+    <!-- TaffyDB -->
+    <script src="taffydb/taffy.js"></script>
+    <script src="taffydb/hours_db.js"></script>
+    <script src="taffydb/methods.js"></script>
+    
+</body>
+</html>

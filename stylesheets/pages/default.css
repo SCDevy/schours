@@ -1,0 +1,137 @@
+/* General */
+#search-box-floater {
+    height: 50%;
+    margin-bottom: -140px; /* half of #search-box height */
+}
+
+#search-box {
+    height: 280px;
+    position: relative;
+    text-align: center;
+}
+
+/* Logo */
+#logo-wrapper #logo {
+    width: 92px; height: 92px;
+    display: inline-block;
+}
+
+#logo-wrapper h1 {
+    margin: 0 0 0 10px;
+    display: inline-block;
+    font-size: 68px;
+}
+
+.text-hours {
+    margin-left: 0;
+    letter-spacing: 2px;
+    font-weight: 100; font-style: italic;
+}
+
+/* Searchbar */
+#search-wrapper {
+    height: 32px;
+    margin: 32px 0 0 0;
+}
+
+#search-field {
+    width: 65%; height: 24px;
+    margin: 0; padding: 4px 12px 4px 12px;
+    display: inline-block;
+    vertical-align: bottom;
+    border: 0 solid #222; border-radius: 2px 0px 0px 2px;
+    font-size: 18px;
+}
+
+#search-field::-webkit-input-placeholder { font-style: italic; }
+#search-field:-moz-placeholder { font-style: italic; }
+#search-field::-moz-placeholder { font-style: italic; }
+#search-field:-ms-input-placeholder { font-style: italic; }
+
+#search-button {
+    width: 60px; height: 32px;
+    margin: 0; padding: 0;
+    vertical-align: bottom;
+    font-size:16px;
+    outline: none;
+    cursor: pointer;
+    text-align: center; text-decoration: none;
+    background: #FFCC00; color: white;
+    border: 0 solid #222; border-radius: 0px 2px 2px 0px;
+    display: inline-block;
+    position: relative;
+}
+
+/* Results */
+#results-wrapper {
+    width: 440px; height: auto;
+    margin: 32px auto 0 auto;
+    background: rgba(0,0,0,0);
+    text-align: left;
+}
+
+.result {
+}
+
+.result-location {
+    float: left;
+    text-decoration: overline;
+    font-size: 20px; font-weight: bold;
+}
+
+.result-day {
+    display: inline-block;
+    font-weight: bold;
+    color: #FFCC00;
+}
+
+.times-wrapper {
+    float: right;
+    text-align: right;
+}
+
+.result-openclose {
+    width: 160px;
+    display: inline-block;
+}
+
+.result-open {
+    display: inline-block;
+}
+
+.result-close {
+    display: inline-block;
+}
+
+.result-closed {
+    display: inline-block;
+}
+
+/* Navbar */
+#nav-wrapper {
+    margin: 12px 0;
+}
+
+#main-nav {
+    margin: 0; padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px; font-weight: 100;
+}
+
+#main-nav li {
+    margin: 0; padding: 10px;
+    display: inline-block;
+    text-transform: lowercase;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+#footer {
+    font-size: 12px;
+    font-weight: 300;
+}
